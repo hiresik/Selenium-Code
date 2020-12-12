@@ -1,0 +1,26 @@
+
+public class pattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int i,j,k,m;
+		k=4;
+		m=10;
+		String str;
+		
+		for(i=1;i<=4;i++)
+		{
+			for(j=1;j<=k;j++)
+			{
+				//str = "%" +(k-j)+"s";
+			
+				System.out.printf("%" +(k-j)+"s",m);
+				m--;
+			}
+			System.out.println("");
+			k--;
+		}
+	}
+
+}

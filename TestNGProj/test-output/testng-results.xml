@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" total="9" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Way2Automation TestSuite" duration-ms="183" started-at="2017-05-30T09:42:05Z" finished-at="2017-05-30T09:42:05Z">
+    <groups>
+      <group name="mid">
+        <method signature="TestCase2.three()[pri:0, instance:TestCase2@5c77399e]" name="three" class="TestCase2"/>
+        <method signature="TestCase3.doLogin()[pri:0, instance:TestCase3@21ca2b38]" name="doLogin" class="TestCase3"/>
+        <method signature="TestCase3.doUserReg()[pri:0, instance:TestCase3@21ca2b38]" name="doUserReg" class="TestCase3"/>
+      </group> <!-- mid -->
+      <group name="high">
+        <method signature="TestCase2.one()[pri:0, instance:TestCase2@5c77399e]" name="one" class="TestCase2"/>
+        <method signature="TestCase2.two()[pri:0, instance:TestCase2@5c77399e]" name="two" class="TestCase2"/>
+        <method signature="TestCase3.validateData()[pri:0, instance:TestCase3@21ca2b38]" name="validateData" class="TestCase3"/>
+      </group> <!-- high -->
+      <group name="low">
+        <method signature="TestCase1.userRegTest()[pri:0, instance:TestCase1@49e1d547]" name="userRegTest" class="TestCase1"/>
+        <method signature="TestCase2.four()[pri:0, instance:TestCase2@5c77399e]" name="four" class="TestCase2"/>
+      </group> <!-- low -->
+    </groups>
+    <test name="Login Test" duration-ms="59" started-at="2017-05-30T09:42:05Z" finished-at="2017-05-30T09:42:05Z">
+      <class name="TestCase1">
+        <test-method status="PASS" signature="userRegTest()[pri:0, instance:TestCase1@49e1d547]" name="userRegTest" duration-ms="25" started-at="2017-05-30T15:12:05Z" finished-at="2017-05-30T15:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegTest -->
+      </class> <!-- TestCase1 -->
+    </test> <!-- Login Test -->
+    <test name="Priority Test" duration-ms="19" started-at="2017-05-30T09:42:05Z" finished-at="2017-05-30T09:42:05Z">
+      <class name="TestCase2">
+        <test-method status="PASS" signature="one()[pri:0, instance:TestCase2@5c77399e]" name="one" duration-ms="1" started-at="2017-05-30T15:12:05Z" finished-at="2017-05-30T15:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- one -->
+        <test-method status="PASS" signature="two()[pri:0, instance:TestCase2@5c77399e]" name="two" duration-ms="1" started-at="2017-05-30T15:12:05Z" finished-at="2017-05-30T15:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- two -->
+        <test-method status="PASS" signature="three()[pri:0, instance:TestCase2@5c77399e]" name="three" duration-ms="1" started-at="2017-05-30T15:12:05Z" finished-at="2017-05-30T15:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- three -->
+        <test-method status="PASS" signature="four()[pri:0, instance:TestCase2@5c77399e]" name="four" duration-ms="1" started-at="2017-05-30T15:12:05Z" finished-at="2017-05-30T15:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- four -->
+      </class> <!-- TestCase2 -->
+    </test> <!-- Priority Test -->
+    <test name="Dependency Test" duration-ms="16" started-at="2017-05-30T09:42:05Z" finished-at="2017-05-30T09:42:05Z">
+      <class name="TestCase3">
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:TestCase3@21ca2b38]" name="doLogin" duration-ms="1" started-at="2017-05-30T15:12:05Z" finished-at="2017-05-30T15:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="SKIP" signature="validateData()[pri:0, instance:TestCase3@21ca2b38]" name="validateData" duration-ms="1" started-at="2017-05-30T15:12:05Z" finished-at="2017-05-30T15:12:05Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the testcase as the condition is not valid]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the testcase as the condition is not valid
+	at TestCase3.validateData(TestCase3.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateData -->
+        <test-method status="PASS" signature="doUserReg()[pri:0, instance:TestCase3@21ca2b38]" name="doUserReg" duration-ms="2" started-at="2017-05-30T15:12:05Z" depends-on-methods="TestCase3.doLogin" finished-at="2017-05-30T15:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doUserReg -->
+      </class> <!-- TestCase3 -->
+    </test> <!-- Dependency Test -->
+    <test name="Assertions Test" duration-ms="14" started-at="2017-05-30T09:42:05Z" finished-at="2017-05-30T09:42:05Z">
+      <class name="TestCase4">
+        <test-method status="FAIL" signature="validateTitlesTest()[pri:0, instance:TestCase4@62f49ef9]" name="validateTitlesTest" duration-ms="4" started-at="2017-05-30T15:12:05Z" finished-at="2017-05-30T15:12:05Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Yahoo.com] but found [Gmail.com]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Yahoo.com] but found [Gmail.com]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at TestCase4.validateTitlesTest(TestCase4.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitlesTest -->
+      </class> <!-- TestCase4 -->
+    </test> <!-- Assertions Test -->
+  </suite> <!-- Way2Automation TestSuite -->
+</testng-results>

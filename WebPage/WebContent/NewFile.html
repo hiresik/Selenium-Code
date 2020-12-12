@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<html dir='ltr' lang='en-US' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<body>
+
+<b><br /></b>
+<b>1). What is Automation Testing?</b><br />
+<a href="https://2.bp.blogspot.com/-suArOKgUgwY/VvQ6aVTuWiI/AAAAAAAAK88/b2gUfRG-ScoOcj6xaiLntIqMUxg9JJPPA/s1600/Capture.JPG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://2.bp.blogspot.com/-suArOKgUgwY/VvQ6aVTuWiI/AAAAAAAAK88/b2gUfRG-ScoOcj6xaiLntIqMUxg9JJPPA/s1600/Capture.JPG" /></a>Automation testing or Test Automation is a process of automating the manual process to test the application/system under test. Automation testing involves use to a separate testing tool which lets you create test scripts which can be executed repeatedly and doesn&#8217;t require any manual intervention.<br />
+<b><br /></b>
+<b>2). What are the benefits/advantages of Automation Testing?</b><br />
+Benefits of Automation testing are:<br />
+<ol style="text-align: left;">
+<li>Supports execution of repeated test cases</li>
+<li>Aids in testing a large test matrix</li>
+<li>Enables parallel execution</li>
+<li>Encourages unattended execution</li>
+<li>Improves accuracy thereby reducing human generated errors</li>
+<li>Saves time and money</li>
+<li>Better Quality Software</li>
+</ol>
+<b>3). What are the disadvantages of Automation Testing?</b><br />
+<ol style="text-align: left;">
+<li>High investment is needed in the tools and training</li>
+<li>High man power requirement for test preparations</li>
+<li>A lot of testing areas left uncovered</li>
+</ol>
+<b>4). Explain what is Selenium and what is composed of?</b><br />
+Selenium is a suite of tools for automated web testing. &nbsp;It is composed of<br />
+<ul style="text-align: left;">
+<li>Selenium IDE (Integrated Development Environment) : &nbsp;It is a tool for recording and playing back. &nbsp;It is a firefox plugin</li>
+<li>WebDriver and RC: &nbsp;It provide the APIs for a variety of languages like Java, .NET, PHP, etc. With most of the browsers Webdriver and RC works.</li>
+<li>Grid: With the help of Grid you can distribute tests on multiple machines so that test can be run parallel which helps in cutting down the time required for running in browser test suites</li>
+</ul>
+<b>5). What do we mean by Selenium 1 and Selenium 2?</b><br />
+Selenium RC and WebDriver, in a combination are popularly known as Selenium 2. Selenium RC alone is also referred as Selenium 1.<br />
+<b><br /></b>
+<b>6). Which is the latest Selenium tool?</b><br />
+WebDriver<br />
+<b><br /></b>
+<b>7). What are the testing types that can be supported by Selenium?</b><br />
+Selenium supports the following types of testing:<br />
+<ol style="text-align: left;">
+<li>Functional Testing</li>
+<li>Regression Testing</li>
+</ol>
+<!-- adsense -->
+<b>8). Why should Selenium be selected as a test tool?</b><br />
+Selenium<br />
+1.is free and open source<br />
+2.have a large user base and helping communities<br />
+3.have cross Browser compatibility (Firefox, chrome, Internet Explorer, Safari etc.)<br />
+4.have great platform compatibility (Windows, Mac OS, Linux etc.)<br />
+5.supports multiple programming languages (Java, C#, Ruby, Python, Pearl etc.)<br />
+6.has fresh and regular repository developments<br />
+7.supports distributed testing<br />
+<br />
+<b>9). What are the different types of waits available in WebDriver?</b><br />
+There are two types of waits available in WebDriver:<br />
+1.Implicit Wait<br />
+2.Explicit Wait<br />
+Implicit Wait: Implicit waits are used to provide a default waiting time (say 30 seconds) between each consecutive test step/command across the entire test script. Thus, subsequent test step would only execute when the 30 seconds have elapsed after executing the previous test step/command.<br />
+Explicit Wait: Explicit waits are used to halt the execution till the time a particular condition is met or the maximum time has elapsed. Unlike Implicit waits, explicit waits are applied for a particular instance only.<br />
+<br />
+<b>10). What are the limitations of Selenium?</b><br />
+Following are the limitations of Selenium:<br />
+<ul style="text-align: left;">
+<li>Selenium supports testing of only web based applications</li>
+<li>Mobile applications cannot be tested using Selenium</li>
+<li>Captcha and Bar code readers cannot be tested using Selenium</li>
+<li>Reports can only be generated using third party tools like TestNG or Junit.</li>
+<li>As Selenium is a free tool, thus there is no ready vendor support though the user can find numerous helping communities.</li>
+<li>User is expected to possess prior programming language knowledge.</li>
+</ul>
+<b>11). When should I use Selenium IDE?</b><br />
+Selenium IDE is the simplest and easiest of all the tools within the Selenium Package. Its record and playback feature makes it exceptionally easy to learn with minimal acquaintances to any programming language. Selenium IDE is an ideal tool for a naïve user.<br />
+<b><br /></b>
+<b>12). How do I launch the browser using WebDriver?</b><br />
+The following syntax can be used to launch Browser:<br />
+WebDriver driver = new FirefoxDriver();<br />
+WebDriver driver = new ChromeDriver();<br />
+WebDriver driver = new InternetExplorerDriver();<br />
+<br />
+<b>13). What is Selenese?</b><br />
+Selenese is the language which is used to write test scripts in Selenium IDE.<br />
+<b><br /></b>
+<b>14). When should I use Selenium Grid?</b><br />
+Selenium Grid can be used to execute same or different test scripts on multiple platforms and browsers concurrently so as to achieve distributed test execution, testing under different environments and saving execution time remarkably.<br />
+<br />
+<b>15). &nbsp;What is Selenium? What are the different Selenium components?</b><br />
+Selenium is one of the most popular automated testing suites. Selenium is designed in a way to support and encourage automation testing of functional aspects of web based applications and a wide range of browsers and platforms. Due to its existence in the open source community, it has become one of the most accepted tools among the testing professionals.<br />
+Selenium is not just a single tool or a utility, rather a package of several testing tools and for the same reason it is referred to as a Suite. Each of these tools is designed to cater different testing and test environment requirements.<br />
+The suite package constitutes of the following sets of tools:<br />
+<ul style="text-align: left;">
+<li>Selenium Integrated Development Environment (IDE) &#8211; Selenium IDE is a record and playback tool. It is distributed as a Firefox Plugin.&nbsp;</li>
+<li>Selenium Remote Control (RC) &#8211; Selenium RC is a server that allows user to create test scripts in a desired programming language. It also allows executing test scripts within the large spectrum of browsers.&nbsp;</li>
+<li>Selenium WebDriver &#8211; WebDriver is a different tool altogether that has various advantages over Selenium RC. WebDriver directly communicates with the web browser and uses its native compatibility to automate.&nbsp;</li>
+<li>Selenium Grid &#8211; Selenium Grid is used to distribute your test execution on multiple platforms and environments concurrently.</li>
+</ul>
+<b>16). What is an Xpath?</b><br />
+Xpath is used to locate a web element based on its XML path. XML stands for Extensible Markup Language and is used to store, organize and transport arbitrary data. It stores data in a key-value pair which is very much similar to HTML tags. Both being markup languages and since they fall under the same umbrella, Xpath can be used to locate HTML elements.<br />
+The fundamental behind locating elements using Xpath is the traversing between various elements across the entire page and thus enabling a user to find an element with the reference of another element.<br />
+<br />
+<b>17). How to type in a textbox using Selenium?</b><br />
+User can use sendKeys(&#8220;String to be entered&#8221;) to enter the string in the textbox.<br />
+Syntax:<br />
+WebElement username = drv.findElement(By.id(&#8220;Email&#8221;));<br />
+// entering username<br />
+username.sendKeys(&#8220;sth&#8221;);<br />
+<br />
+<b>18). How can you find if an element in displayed on the screen?</b><br />
+WebDriver facilitates the user with the following methods to check the visibility of the web elements. These web elements can be buttons, drop boxes, checkboxes, radio buttons, labels etc.<br />
+1.isDisplayed()<br />
+2.isSelected()<br />
+3.isEnabled()<br />
+Syntax:<br />
+<br />
+isDisplayed():<br />
+boolean buttonPresence = driver.findElement(By.id(&#8220;gbqfba&#8221;)).isDisplayed();<br />
+<br />
+isSelected():<br />
+boolean buttonSelected =driver.findElement(By.id(&#8220;gbqfba&#8221;)).isDisplayed();<br />
+<br />
+isEnabled():<br />
+boolean searchIconEnabled = driver.findElement(By.id(&#8220;gbqfb&#8221;)).isEnabled();<br />
+<br />
+<b>19). Can you explain the phase of Automation Testing LifeCycle?</b><br />
+<ul style="text-align: left;">
+<li>Outline the potential benefits and test tool proposal</li>
+<li>Test tool evaluation and selection&nbsp;</li>
+<li>Steps necessary to outline automated testing to the project</li>
+<li>Identifies the test procedure standards, defines the tests, defines development standard</li>
+<li>Test plans are executed</li>
+<li>This is done throughout the life-cycle&nbsp;<div class="separator" style="clear: both; text-align: center;">
+<a href="https://4.bp.blogspot.com/-zH9Ey7BjStg/VvQ3UN2fBFI/AAAAAAAAK8w/FmFfqimcJ1QohaFKN8RIU-tOvEVUhxnDg/s1600/Capture.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://4.bp.blogspot.com/-zH9Ey7BjStg/VvQ3UN2fBFI/AAAAAAAAK8w/FmFfqimcJ1QohaFKN8RIU-tOvEVUhxnDg/s320/Capture.JPG" width="319" /></a></div>
+</li>
+</ul>
+<br />
+<b>20). What are the different types of locators in Selenium?</b><br />
+Locator can be termed as an address that identifies a web element uniquely within the webpage. Thus, to identify web elements accurately and precisely we have different types of locators in Selenium:<br />
+<ul style="text-align: left;">
+<li>ID</li>
+<li>ClassName</li>
+<li>Name</li>
+<li>TagName</li>
+<li>LinkText</li>
+<li>PartialLinkText</li>
+<li>Xpath</li>
+<li>CSS Selector</li>
+<li>DOM</li>
+</ul>
+<b>21). What are the different types of Drivers available in WebDriver?</b><br />
+The different drivers available in WebDriver are:<br />
+<ul style="text-align: left;">
+<li>FirefoxDriver</li>
+<li>InternetExplorerDriver</li>
+<li>ChromeDriver</li>
+<li>SafariDriver</li>
+<li>OperaDriver</li>
+<li>AndroidDriver</li>
+<li>IPhoneDriver</li>
+<li>HtmlUnitDriver</li>
+</ul>
+<b>22). What is difference between assert and verify commands?</b><br />
+Assert:<br />
+Assert command checks whether the given condition is true or false. Let&#8217;s say we assert whether the given element is present on the web page or not. If the condition is true then the program control will execute the next test step but if the condition is false, the execution would stop and no further test would be executed.<br />
+Verify:<br />
+Verify command also checks whether the given condition is true or false. Irrespective of the condition being true or false, the program execution doesn&#8217;t halts i.e. any failure during verification would not stop the execution and all the test steps would be executed.<br />
+<br />
+<b>23). What are the steps to run automation using selenium?</b><br />
+The very basic steps are:<br />
+<ol style="text-align: left;">
+<li>Record the test steps using selenium-IDE.&nbsp;</li>
+<li>Modify the script according to the testing needs. Add validation points, Java Scripts, Time-out etc.&nbsp;</li>
+<li>Run the test.&nbsp;</li>
+<li>View the result after test run complete analyze.</li>
+</ol>
+<b>24). What are the capabilities of Selenium IDE?</b><br />
+Selenium IDE (Integrated Development Environment) works similar to commercial tools like QTP, Silk Test and Test Partner etc.<br />
+The below points describes well about Selenium IDE.<br />
+<ol style="text-align: left;">
+<li>Selenium IDE is a Firefox add-on.&nbsp;</li>
+<li>Selenium IDE can support recording the clicks, typing, and other actions to make a test cases.&nbsp;</li>
+<li>Using Selenium IDE, a tester can play back the test cases in the Firefox browser.&nbsp;</li>
+<li>Selenium IDE supports exporting the test cases and suites to Selenium RC.&nbsp;</li>
+<li>Debugging of the test cases with step-by-step can be done.&nbsp;</li>
+<li>Breakpoint insertion is possible.&nbsp;</li>
+<li>Page abstraction functionality is supported by Selenium IDE.&nbsp;</li>
+<li>Selenium IDE can supports an extensibility capability allowing the use of add-ons or user extensions that expand the functionality of Selenium IDE</li>
+</ol>
+<b>25). How to find more than one web element in the list?</b><br />
+At times, we may come across elements of same type like multiple hyperlinks, images etc arranged in an ordered or unordered list. Thus, it makes absolute sense to deal with such elements by a single piece of code and this can be done using WebElement List.<br />
+<br />
+Sample Code<br />
+// Storing the list<br />
+List elementList = driver.findElements(By.xpath("//div[@id='example']//ul//li"));<br />
+// Fetching the size of the list<br />
+int listSize = elementList.size();<br />
+for (int i=0; i {<br />
+// Clicking on each service provider link<br />
+serviceProviderLinks.get(i).click();<br />
+// Navigating back to the previous page that stores link to service providers<br />
+driver.navigate().back();<br />
+}<br />
+<br />
+<b>26). What is the difference between driver.close() and driver.quit command?</b><br />
+close(): WebDriver&#8217;s close() method closes the web browser window that the user is currently working on or we can also say the window that is being currently accessed by the WebDriver. The command neither requires any parameter nor does is return any value.<br />
+quit(): Unlike close() method, quit() method closes down all the windows that the program has opened. Same as close() method, the command neither requires any parameter nor does is return any value.<br />
+<br />
+<b>27). How can we get a text of a web element?</b><br />
+Get command is used to retrieve the inner text of the specified web element. The command doesn&#8217;t require any parameter but returns a string value. It is also one of the extensively used commands for verification of messages, labels, errors etc displayed on the web pages.<br />
+Syntax:<br />
+String Text = driver.findElement(By.id(&#8220;Text&#8221;)).getText();<br />
+What is the difference between &#8220;/&#8221; and &#8220;//&#8221; in Xpath?<br />
+Single Slash &#8220;/&#8221; &#8211;<br />
+Single slash is used to create Xpath with absolute path i.e. the xpath would be created to start selection from the document node/start node.<br />
+<br />
+Double Slash &#8220;//&#8221; &#8211;<br />
+Double slash is used to create Xpath with relative path i.e. the xpath would be created to start selection from anywhere within the document.<br />
+How to select value in a dropdown?<br />
+Value in the drop down can be selected using WebDriver&#8217;s Select class.<br />
+<br />
+Syntax:<br />
+SelectByValue:<br />
+Select selectByValue = new Select(driver.findElement(By.id(&#8220;SelectID_One&#8221;)));<br />
+selectByValue.selectByValue(&#8220;greenvalue&#8221;);<br />
+<br />
+selectByVisibleText:<br />
+Select selectByVisibleText = new Select (driver.findElement(By.id(&#8220;SelectID_Two&#8221;)));<br />
+selectByVisibleText.selectByVisibleText(&#8220;Lime&#8221;);<br />
+<br />
+selectByIndex:<br />
+Select selectByIndex = new Select(driver.findElement(By.id(&#8220;SelectID_Three&#8221;)));<br />
+selectByIndex.selectByIndex(2);<br />
+<br />
+<b>28). What are the different types of navigation commands?</b><br />
+Following are the navigation commands:<br />
+<br />
+navigate().back() &#8211; The above command requires no parameters and takes back the user to the previous webpage in the web browser&#8217;s history.<br />
+Sample code:<br />
+driver.navigate().back();<br />
+<br />
+navigate().forward() &#8211;<br />
+This command lets the user to navigate to the next web page with reference to the browser&#8217;s history.<br />
+<br />
+Sample code:<br />
+driver.navigate().forward();<br />
+<br />
+navigate().refresh() &#8211;<br />
+This command lets the user to refresh the current web page there by reloading all the web elements.<br />
+<br />
+Sample code:<br />
+driver.navigate().refresh();<br />
+<br />
+navigate().to() &#8211;<br />
+This command lets the user to launch a new web browser window and navigate to the specified URL.<br />
+<br />
+Sample code:<br />
+driver.navigate().to(&#8220;https://google.com&#8221;);<br />
+<b><br /></b>
+<b>29). How to get title?</b><br />
+driver.getTitle();~To Print: System.out.println( driver.getTitle());<br />
+<br />
+<b>30). Can Selenium handle windows based pop up?</b><br />
+Selenium is an automation testing tool which supports only web application testing. Therefore, windows pop up cannot be handled using Selenium.<br />
+<br />
+<b>31). Can WebDriver test Mobile applications?</b><br />
+WebDriver cannot test Mobile applications. WebDriver is a web based testing tool, therefore applications on the mobile browsers can be tested.<br />
+<br />
+<b>32). How can we handle web based pop up?</b><br />
+WebDriver offers the users with a very efficient way to handle these pop ups using Alert interface. There are the four methods that we would be using along with the Alert interface.<br />
+&#8226; void dismiss() &#8211; The accept() method clicks on the &#8220;Cancel&#8221; button as soon as the pop up window appears.<br />
+&#8226; void accept() &#8211; The accept() method clicks on the &#8220;Ok&#8221; button as soon as the pop up window appears.<br />
+&#8226; String getText() &#8211; The getText() method returns the text displayed on the alert box.<br />
+&#8226; void sendKeys(String stringToSend) &#8211; The sendKeys() method enters the specified string pattern into the alert box.<br />
+<br />
+Syntax:<br />
+// accepting javascript alert<br />
+Alert alert = driver.switchTo().alert();<br />
+alert.accept();<br />
+<br />
+<b>33). How can we handle windows based pop up?</b><br />
+Selenium is an automation testing tool which supports only web application testing, that means, it doesn&#8217;t support testing of windows based applications. However Selenium alone can&#8217;t help the situation but along with some third party intervention, this problem can be overcome. There are several third party tools available for handling window based pop ups along with the selenium like AutoIT, Robot class etc.<br />
+<br />
+<b>34). How to click on a hyper link using linkText?</b><br />
+driver.findElement(By.linkText(&#8220;Google&#8221;)).click();<br />
+The command finds the element using link text and then click on that element and thus the user would be re-directed to the corresponding page.<br />
+The above mentioned link can also be accessed by using the following command.<br />
+driver.findElement(By.partialLinkText(&#8220;Goo&#8221;)).click();<br />
+<br />
+The above command find the element based on the substring of the link provided in the parenthesis and thus partialLinkText() finds the web element with the specified substring and then clicks on it.<br />
+<br />
+<b>35). How to assert title of the web page?</b><br />
+//verify the title of the web page<br />
+assertTrue(&#8220;The title of the window is incorrect.&#8221;,driver.getTitle().equals(&#8220;Title of the page&#8221;));<br />
+<br />
+<b>36). What is a framework?</b><br />
+Framework is a constructive blend of various guidelines, coding standards, concepts, processes, practices, project hierarchies, modularity, reporting mechanism, test data injections etc. to pillar automation testing.<br />
+<br />
+<b>37). How to handle frame in WebDriver?</b><br />
+An inline frame acronym as iframe is used to insert another document with in the current HTML document or simply a web page into a web page by enabling nesting.<br />
+Select iframe by id<br />
+driver.switchTo().frame(&#8220;ID of the frame&#8220;);<br />
+<br />
+Locating iframe using tagName<br />
+driver.switchTo().frame(driver.findElements(By.tagName(&#8220;iframe&#8221;).get(0));<br />
+Locating iframe using index<br />
+<br />
+frame(index)<br />
+driver.switchTo().frame(0);<br />
+<br />
+frame(Name of Frame)<br />
+driver.switchTo().frame(&#8220;name of the frame&#8221;);<br />
+<br />
+<b>38). When do we use findElement() and findElements()?</b><br />
+findElement(): findElement() is used to find the first element in the current web page matching to the specified locator value. Take a note that only first matching element would be fetched.<br />
+Syntax:<br />
+<br />
+WebElement element =<br />
+driver.findElements(By.xpath(&#8220;//div[@id=&#8217;example&#8217;]//ul//li&#8221;));<br />
+<br />
+findElements():<br />
+findElements() is used to find all the elements in the current web page matching to the specified locator value. Take a note that all the matching elements would be fetched and stored in the list of WebElements.<br />
+<br />
+Syntax:<br />
+List elementList =<br />
+driver.findElements(By.xpath(&#8220;//div[@id=&#8217;example&#8217;]//ul//li&#8221;));<br />
+<br />
+<b>39). What are the advantages of Automation framework?</b><br />
+Advantage of Test Automation framework<br />
+<ul style="text-align: left;">
+<li>Reusability of code</li>
+<li>Maximum coverage</li>
+<li>Recovery scenario</li>
+<li>Low cost maintenance</li>
+<li>Minimal manual intervention</li>
+<li>Easy Reporting</li>
+</ul>
+<b>40). How can I read test data from excels?</b><br />
+Test data can efficiently be read from excel using JXL or POI API. See detailed tutorial here.<br />
+<br />
+<b>41). Explain how Selenium Grid works?</b><br />
+Selenium Grid sent the tests to the hub. These tests are redirected to Selenium Webdriver, which launch the browser and run the test. With entire test suite, it allows for running tests in parallel.<br />
+<br />
+<b>42). How to mouse hover on a web element using WebDriver?</b><br />
+WebDriver offers a wide range of interaction utilities that the user can exploit to automate mouse and keyboard events. Action Interface is one such utility which simulates the single user interactions.<br />
+Thus, In the following scenario, we have used Action Interface to mouse hover on a drop down which then opens a list of options.<br />
+<br />
+Sample Code:<br />
+// Instantiating Action Interface<br />
+Actions actions=new Actions(driver);<br />
+// howering on the dropdown<br />
+actions.moveToElement(driver.findElement(By.id("id of the dropdown"))).perform();<br />
+// Clicking on one of the items in the list options<br />
+WebElement subLinkOption=driver.findElement(By.id("id of the sub link"));<br />
+subLinkOption.click();<br />
+<br />
+<b>43). Can captcha be automated?</b><br />
+No, captcha and bar code reader cannot be automated.<br />
+<br />
+<b>44). Explain what is assertion in Selenium and what are the types of assertion?</b><br />
+Assertion is used as a verification point. It verifies that the state of the application conforms to what is expected. The types of assertion are &#8220;assert&#8221; , &#8220;verify&#8221; and &#8220;waifFor&#8221;..<br />
+<br />
+<b>45). While using click command can you use screen coordinate?</b><br />
+To click on specific part of element, you would need to use clickAT command. ClickAt command accepts element locator and x, y co-ordinates as arguments-<br />
+clickAt (locator, cordString)<br />
+<br />
+<b>46). What are the advantages of Selenium?</b><br />
+<ul style="text-align: left;">
+<li>It supports C#, PHP, Java, Perl, Phython</li>
+<li>It supports different OS like Windows, Linux and Mac OS</li>
+<li>It has got powerful methods to locate elements (Xpath, DOM , CSS)</li>
+<li>It has highly developer community supported by Google</li>
+</ul>
+<b>47). How to retrieve css properties of an element?</b><br />
+The values of the css properties can be retrieved using a get() method:<br />
+Syntax:<br />
+driver.findElement(By.id(&#8220;id&#8220;)).getCssValue(&#8220;name of css attribute&#8221;);<br />
+driver.findElement(By.id(&#8220;id&#8220;)).getCssValue(&#8220;font-size&#8221;);<br />
+&nbsp;How to capture screen shot in WebDriver?<br />
+import org.junit.After;<br />
+import org.junit.Before;<br />
+import org.junit.Test;<br />
+import java.io.File;<br />
+import java.io.IOException;<br />
+import org.apache.commons.io.FileUtils;<br />
+import org.openqa.selenium.OutputType;<br />
+import org.openqa.selenium.TakesScreenshot;<br />
+import org.openqa.selenium.WebDriver;<br />
+import org.openqa.selenium.firefox.FirefoxDriver;<br />
+public class CaptureScreenshot {<br />
+WebDriver driver;<br />
+@Before<br />
+public void setUp() throws Exception {<br />
+driver = new FirefoxDriver();<br />
+driver.get("https://google.com");<br />
+}<br />
+@After<br />
+public void tearDown() throws Exception {<br />
+driver.quit();<br />
+}<br />
+@Test<br />
+public void test() throws IOException {<br />
+// Code to capture the screenshot<br />
+File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);<br />
+// Code to copy the screenshot in the desired location<br />
+FileUtils.copyFile(scrFile, new File("C:\\CaptureScreenshot\\google.jpg"));<br />
+}<br />
+}<br />
+<br />
+<br />
+<b>48). What is the difference between type keys and type commands ?</b><br />
+TypeKeys() will trigger JavaScript event in most of the cases whereas .type() won&#8217;t. Type key populates the value attribute using JavaScript whereas .typekeys() emulates like actual user typing<br />
+<br />
+<b>49). What is the difference between setSpeed() and sleep() methods?</b><br />
+:Both will delay the speed of execution.<br />
+Thread.sleep () : It will stop the current (java) thread for the specified period of time. Its done only once<br />
+<br />
+&#8226; It takes a single argument in integer format<br />
+Ex: thread.sleep(2000)- It will wait for 2 seconds<br />
+<br />
+&#8226; It waits only once at the command given at sleep<br />
+SetSpeed () : For specific amount of time it will stop the execution for every selenium command.<br />
+<br />
+&#8226; It takes a single argument in integer format<br />
+Ex: selenium.setSpeed(&#8220;2000&#8221;)- It will wait for 2 seconds<br />
+<br />
+&#8226; Runs each command after setSpeed delay by the number of milliseconds mentioned in set Speed<br />
+This command is useful for demonstration purpose or if you are using a slow web application<br />
+What is same origin policy? How you can avoid same origin policy?<br />
+The &#8220;Same Origin Policy&#8221; is introduced for security reason, and it ensures that content of your site will never be accessible by a script from another site. As per the policy, any code loaded within the browser can only operate within that website&#8217;s domain.<br />
+<br />
+To avoid &#8220;Same Origin Policy&#8221; proxy injection method is used, in proxy injection mode the Selenium Server acts as a client configured HTTP proxy , which sits between the browser and application under test and then masks the AUT under a fictional URL<br />
+<b><br /></b>
+<b>50). What is Object Repository? How can we create Object Repository in Selenium?</b><br />
+Object Repository is a term used to refer to the collection of web elements belonging to Application Under Test (AUT) along with their locator values. Thus, whenever the element is required within the script, the locator value can be populated from the Object Repository. Object Repository is used to store locators in a centralized location instead of hard coding them within the scripts.<br />
+<br />
+In Selenium, objects can be stored in an excel sheet which can be populated inside the script whenever required.<br />
+What is Selenium and what is composed of?<br />
+Selenium is a suite of tools for automated web testing. It is composed of<br />
+<ul style="text-align: left;">
+<li>Selenium IDE (Integrated Development Environment) : It is a tool for recording and playing back. It is a firefox plugin&nbsp;</li>
+<li>WebDriver and RC: It provide the APIs for a variety of languages like Java, .NET, PHP, etc. With most of the browsers Webdriver and RC works.&nbsp;</li>
+<li>Grid: With the help of Grid you can distribute tests on multiple machines so that test can be run parallel which helps in cutting down the time required for running in browser test suites</li>
+</ul>
+<b>51). What is Selenium 2.0 ?</b><br />
+Web testing tools Selenium RC and WebDriver are consolidated in single tool in Selenium 2.0<br />
+<b><br /></b>
+<b>52). Mention what is the use of X-path?</b><br />
+X-Path is used to find the WebElement in web pages. It is also useful in identifying the dynamic elements.<br />
+List out the technical challenges with Selenium?<br />
+Technical challenges with Selenium are<br />
+<ul style="text-align: left;">
+<li>Selenium supports only web based applications</li>
+<li>It does not support the Bitmap comparison</li>
+<li>For any reporting related capabilities have to depend on third party tools</li>
+<li>No vendor support for tool compared to commercial tools like HP UFT</li>
+<li>As there is no object repository concept in Selenium, maintainability of objects becomes difficult</li>
+</ul>
+<b>53). List out the test types that are supported by Selenium?</b><br />
+For web based application testing selenium can be used<br />
+The test types can be supported are<br />
+a) Functional<br />
+b) Regression<br />
+<br />
+For post release validation with continuous integration automation tool could be used<br />
+a) Jenkins<br />
+b) Hudson<br />
+c) Quick Build<br />
+d) CruiseCont<br />
+<br />
+<b>54). What is heightened privileges browsers?</b><br />
+The purpose of heightened privileges is similar to Proxy Injection, allows websites to do something that are not commonly permitted. The key difference is that the browsers are launced in a special mode called heightened privileges. By using these browser mode, Selenium core can open the AUT directly and also read/write its content without passing the whole AUT through the Selenium RC server<br />
+<br />
+<b>55). Why testers should opt for Selenium and not QTP?</b><br />
+Selenium is more popular than QTP as<br />
+<ul style="text-align: left;">
+<li>Selenium is an open source whereas QTP is a commercial tool</li>
+<li>Selenium is used specially for testing web based applications while QTP can be used for testing client server application also</li>
+<li>Selenium supports Firefox, IE, Opera, Safari on operating systems like Windows, Mac, linux etc. however QTP is limited to Internet Explorer on Windows.</li>
+<li>Selenium supports many programming languages like Ruby, Perl, Python whereas QTP supports only VB script</li>
+</ul>
+<b>56). What are the four parameter you have to pass in Selenium?</b><br />
+Four parameters that you have to pass in Selenium are<br />
+<ul style="text-align: left;">
+<li>Host</li>
+<li>Port Number</li>
+<li>Browser</li>
+<li>URL</li>
+</ul>
+<b>57). How you can use &#8220;submit&#8221; a form using Selenium ?</b><br />
+You can use &#8220;submit&#8221; method on element to submit form-<br />
+element.submit () ;<br />
+Alternatively you can use click method on the element which does form submission<br />
+<br />
+Selenium IDE captures 3 options?<br />
+Command, Target, Value<br />
+<br />
+<b>58). Mention what is the difference between Implicit wait and Explicit wait?</b><br />
+Implicit Wait:Sets a timeout for all successive Web Element searches. For the specified amount of time it will try looking for element again and again before throwing a NoSuchElementException. It waits for elements to show up.<br />
+<br />
+Explicit Wait : It is a one-timer, used for a particular search./p&gt;<br />
+<br />
+<b>59). What is Object Repository ?</b><br />
+An object repository is an essential entity in any UI automations which allows a tester to store all object that will be used in the scripts in one or more centralized locations rather than scattered all over the test scripts.<br />
+<br />
+<b>60). Explain how to assert text of webpage using selenium 2.0 ?</b><br />
+WebElement el = driver.findElement(By.id(&#8220;ElementID&#8221;))<br />
+//get test from element and stored in text variable<br />
+<br />
+String text = el.getText();<br />
+//assert text from expected<br />
+Assert.assertEquals(&#8220;Element Text&#8221;, text);<br />
+<br />
+<b>61). Can we use Selenium grid for performance testing?</b><br />
+Yes. But not as effectively as a dedicated performance testing tool like Loadrunner.<br />
+<br />
+<b>62). Can Selenium test an application on Android browser?</b><br />
+Selenium can handle Android browser.<br />
+<br />
+<b>63). Which browsers does WebDriver support?</b><br />
+The existing drivers are the ChromeDriver, InternetExplorerDriver, FirefoxDriver, OperaDriver and HtmlUnitDriver. For more information about each of these, including their relative strengths and weaknesses, please follow the links to the relevant pages. There is also support for mobile testing via the AndroidDriver, OperaMobileDriver and IPhoneDriver<br />
+<br />
+<b>64). What tests can selenium do?</b><br />
+Selenium could do functional, regression, and load of web based applications.p&gt;<br />
+<br />
+<b>65). Which attribute you should consider throughout the script in frame for &#8220;if no frame Id as well as no frame name&#8221;?</b><br />
+You can use&#8230;..driver.findElements(By.xpath(&#8220;//iframe&#8221;))&#8230;.<br />
+This will return list of frames.<br />
+You will ned to switch to each and every frame and search for locator which we want.<br />
+Then break the loop<br />
+<br />
+<b>66). How do I execute Javascript directly?</b><br />
+We believe that most of the time there is a requirement to execute Javascript there is a failing in the tool being used: it hasn&#8217;t emitted the correct events, has not interacted with a page correctly, or has failed to react when an XmlHttpRequest returns. We would rather fix WebDriver to work consistently and correctly than rely on testers working out which Javascript method to call.<br />
+We also realise that there will be times when this is a limitation. As a result, for those browsers that support it, you can execute Javascript by casting the WebDriver instance to a JavascriptExecutor. In Java, this looks like:<br />
+<br />
+WebDriver driver; // Assigned elsewhere<br />
+<br />
+JavascriptExecutor js = (JavascriptExecutor) driver;<br />
+<br />
+js.executeScript(&#8220;return document.title&#8221;);<br />
+<br />
+Other language bindings will follow a similar approach. Take a look at the UsingJavascript page for more information.<br />
+<br />
+<b>67). My XPath finds elements in one browser, but not in others. Why is this?</b><br />
+The short answer is that each supported browser handles XPath slightly differently, and you&#8217;re probably running into one of these differences. The long answer is on the XpathInWebDriver page..<br />
+<br />
+<b>68). Explain what is the difference between find elements () and find element () ?</b><br />
+find element ():<br />
+It finds the first element within the current page using the given &#8220;locating mechanism&#8221;. It returns a single WebElement<br />
+<br />
+findElements () :<br />
+Using the given &#8220;locating mechanism&#8221; find all the elements within the current page. It returns a list of web elements.<br />
+Explain what are the JUnits annotation linked with Selenium?<br />
+The JUnits annotation linked with Selenium are<br />
+<br />
+@Before public void method() &#8211;<br />
+It will perform the method () before each test, this method can prepare the test<br />
+<br />
+@Test public void method() &#8211;<br />
+Annotations @Test identifies that this method is a test method environment<br />
+<br />
+@After public void method()-<br />
+To execute a method before this annotation is used, test method must start with test@Before<br />
+<br />
+<b>69). What is Selenium IDE?</b><br />
+Selenium IDE is an integrated development environment for Selenium tests. It is implemented as a Firefox extension, and has a recording feature, which will keep account of user actions as they are performed and store them as a reusable script to play back. Selenium-IDE also offers full editing of test cases for more precision and control.<br />
+<br />
+<b>70). Why is my Javascript execution always returning null?</b><br />
+ou need to return from your javascript snippet to return a value, so:<br />
+<br />
+js.executeScript(&#8220;document.title&#8221;);<br />
+will return null, but:<br />
+<br />
+js.executeScript(&#8220;return document.title&#8221;);<br />
+will return the title of the document.<br />
+<br />
+<b>71). What is WebDriver?</b><br />
+WebDriver is a tool for writing automated tests of websites. It aims to mimic the behaviour of a real user, and as such interacts with the HTML of the application<br />
+<br />
+<b>72). Can Selenium test a application on iPhone&#8217;s Mobile Safari browser?</b><br />
+Selenium can handle Mobile Safari browser. There is experimental Selenium IPhone Driver for running tests on Mobile with Safari on the iPhone and iPad and iPod Touch.<br />
+<br />
+<b>73). What are the disadvantages of Selenium?</b><br />
+Disadvantages of Selenium:<br />
+<ul style="text-align: left;">
+<li>Limitation in terms of browser support (It runs only in Mozilla).Scripts written using Selenium IDE can be used for other browsers only if it is used with Selenium RC or Selenium Core.&nbsp;</li>
+<li>We can&#8217;t run recorded script if it is converted to Java, C#, Ruby etc.&nbsp;</li>
+<li>Not allowed to write manual scripts like conditions and Loops for Data Driven Testing&nbsp;</li>
+<li>There is no option to verify images</li>
+</ul>
+<b>74). Explain what is Datadriven framework and Keyword driven?</b><br />
+Datadriven framework:<br />
+In this framework, the test data is separated and kept outside the Test Scripts, while test case logic resides in Test Scripts. Test data is read from the external files ( Excel Files) and are loaded into the variables inside the Test Script. Variables are used for both for input values and for verification values.<br />
+Keyworddriven framework:<br />
+The keyword driven frameworks requires the development of data tables and keywords, independent of the test automation. In a keyword driven test, the functionality of the application under test is documented in a table as well as step by step instructions for each test.<br />
+<br />
+<b>76). What are the features of TestNG and list some of the functionality in TestNG which makes it more effective?</b><br />
+TestNG is a testing framework based on JUnit and NUnit to simplify a broad range of testing needs, from unit testing to integration testing. And the functionality which makes it efficient testing framework are<br />
+<ul style="text-align: left;">
+<li>Support for annotations</li>
+<li>Support for data-driven testing</li>
+<li>Flexible test configuration</li>
+<li>Ability to re-execute failed test cases</li>
+</ul>
+<b>77). Explain how you can login into any site if it&#8217;s showing any authentication popup for password and username?</b><br />
+Pass the username and password with url<br />
+<ul style="text-align: left;">
+<li>Syntax- http://username:password@url</li>
+<li>ex- http://creyate:abc@www.gmail.com</li>
+</ul>
+<b>78). What is the selenium&#8217;s recording language?</b><br />
+Selenium&#8217;s recording language is &#8220;HTML&#8221;.<br />
+<br />
+<b>79). What does it mean to be &#8220;developer focused&#8221;?</b><br />
+We believe that within a software application&#8217;s development team, the people who are best placed to build the tools that everyone else can use are the developers. Although it should be easy to use WebDriver directly, it should also be easy to use it as a building block for more sophisticated tools. Because of this, WebDriver has a small API that&#8217;s easy to explore by hitting the &#8220;autocomplete&#8221; button in your favorite IDE, and aims to work consistently no matter which browser implementation you use.<br />
+<br />
+<b>80). What are the steps to run automation using selenium?</b><br />
+The very basic steps are:<br />
+<ol style="text-align: left;">
+<li>Record the test steps using selenium-IDE.&nbsp;</li>
+<li>Modify the script according to the testing needs. Add validation points, Java Scripts, Time-out etc.&nbsp;</li>
+<li>Run the test.&nbsp;</li>
+<li>View the result after test run complete analyze.</li>
+</ol>
+<div>
+<br /></div>
+
+</body>
+</html>

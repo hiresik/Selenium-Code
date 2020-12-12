@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class ReverseaStringStringBuffer {
+	public static String Reverse1(String a){
+		String reverse = "";
+		int len = a.length();
+	    	for (int i = len - 1 ; i >= 0 ; i-- )
+	        reverse += a.charAt(i);
+	    	return reverse;
+	}
+	public static StringBuffer Reverse2(String a){
+		StringBuffer sb = new StringBuffer(a);
+		return sb.reverse();
+	}
+	
+	   /* Function to print reverse of the passed string */
+	public static String Reverse3(String a)
+    {
+        if ((a==null)||(a.length() <= 1))
+           System.out.println(a);
+        else
+        {
+            System.out.print(a.charAt(a.length()-1));
+            Reverse3(a.substring(0,a.length()-1));
+        }
+        return a;
+    }
+	
+	public static void main(String args[]){
+		String original="The icon is blue in color";
+	//	Scanner in = new Scanner(System.in);
+       //         System.out.println("Enter a string to reverse: ");
+       //         original = in.nextLine();
+				System.out.println("Original string is: "+(original));
+				System.out.println("Reverse of entered string is: "+Reverse1(original));
+                System.out.println("Reverse of entered string is: "+Reverse2(original));
+                System.out.println("Reverse of entered string is: "+Reverse3(original));
+                //in.close();
+	}
+}

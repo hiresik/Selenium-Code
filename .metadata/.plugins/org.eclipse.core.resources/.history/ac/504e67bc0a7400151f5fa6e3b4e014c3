@@ -1,0 +1,156 @@
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxBinary;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class GmailTest {
+
+	// created reference variable for WebDriver
+	WebDriver drv;
+	Actions action; 
+
+
+@Before
+public void setup() throws InterruptedException {
+
+//	profile.setPreference("browser.startup.homepage",	"http://www.google.com");
+//	driver = new FirefoxDriver(profile);
+       
+//     WebDriver driver = new FirefoxDriver(ffBinary,firefoxProfile);
+//	   File file = new File("firebug-2.0.12.xpi");
+	//   FirefoxProfile firefoxProfile = new FirefoxProfile();
+	  // try {
+		//firefoxProfile.addExtension(file);
+	//} catch (IOException e) {
+		// TODO Auto-generated catch block
+		//e.printStackTrace();
+	//}
+//   firefoxProfile.setPreference("extensions.firebug.currentVersion", "2.0.12"); // Avoid startup screen
+
+//	   WebDriver driver = new FirefoxDriver(firefoxProfile);
+	   
+	ProfilesIni listprofiles = new ProfilesIni();
+	FirefoxProfile profile = listprofiles.getProfile("default");
+	//	FirefoxProfile profile = listprofiles.getProfile("selenium");
+		
+		drv = new FirefoxDriver(profile);
+		drv.get("http://www.gmail.com");
+Set<String> winids=  drv.getWindowHandles();
+Iterator<String> iterate = winids.iterator();
+
+String mainwindow = iterate.next();
+
+System.out.println("Main windows " + mainwindow);
+// initializing drv variable using FirefoxDriver
+//drv=new FirefoxDriver(ffBinary,firefoxProfile);
+// launching gmail.com on the browser
+//drv.get("http://gmail.com");
+// maximized the browser window
+drv.manage().window().maximize();
+drv.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+}
+
+@Test
+public void test() throws InterruptedException, Exception {
+	
+	
+
+	action = new Actions(drv);
+drv.findElement(By.xpath(".//*[@id='choose-account-1']")).click();
+	
+	// saving the GUI element reference into a "username" variable of WebElement type
+WebElement username = drv.findElement(By.id("Email"));
+
+// entering username
+//username.sendKeys("finn.gray.gwra");
+
+//clicking signin button
+//drv.findElement(By.id("next")).click();
+
+// entering password
+drv.findElement(By.id("Passwd")).sendKeys("finn.gray.gwra@123");
+
+//clicking signin button
+drv.findElement(By.id("signIn")).click();
+
+
+action.sendKeys(Keys.F12).build().perform();
+// explicit wait - to wait for the compose button to be click-able
+WebDriverWait wait = new WebDriverWait(drv,30);
+
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//div[contains(text(),'COMPOSE')]")));
+File scrFile = ((TakesScreenshot)drv).getScreenshotAs(OutputType.FILE);
+//The below method will save the screen shot in d drive with name "screenshot.png"
+ FileUtils.copyFile(scrFile, new File("D:\\screenshot.jpg"));
+ 
+//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id=':3q']/div/div[1]/span/a")));
+// click on the compose button as soon as the "compose" button is visible
+drv.findElement(By.xpath(".//div[contains(text(),'COMPOSE')]")).click();
+Set<String> winids=  drv.getWindowHandles();
+Iterator<String> iterate = winids.iterator();
+
+String popupwind = iterate.next();
+System.out.println("pop up windows " + popupwind);
+
+Thread.sleep(3000);
+scrFile = ((TakesScreenshot)drv).getScreenshotAs(OutputType.FILE);
+FileUtils.copyFile(scrFile, new File("D:\\screenshot1.jpg"));
+
+//drv.findElement(By.xpath(".//*[@id=':5i']")).click();
+
+
+//System.out.print("Waiting for 3 seconds");
+//Thread.sleep(3000);
+//drv.findElement(By.xpath(".//*[@id='gb']/div[1]/div[1]/div/div[4]/div[1]/a")).click();
+//drv.findElement(By.xpath(".//*[@id='gb_71']")).click();
+
+///drv.switchTo().frame("apiproxy17f2b422328a62a6d5a44b67a3ea90e06246284a0.06169268195842892").
+
+drv.findElement(By.xpath("//div[contains(text(),'COMPOSE')]")).sendKeys("a373651@gmail.com");
+drv.findElement(By.xpath("//*[@id=':8i']")).sendKeys("Testing Gmail App - In the subject");
+drv.findElement(By.xpath("//*[@id=':9z']")).sendKeys("Testing Gmail App - In the body");
+drv.findElement(By.xpath("//*[@id=':88']")).click();
+
+System.out.println(drv.getTitle());
+
+
+//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id=':6j']/div/div/div")));
+//drv.findElement(By.xpath(".//*[@id=':97']")).click();
+
+//drv.findElement(By.xpath("//div[contains(text(),'COMPOSE')]")).click();
+//drv.findElement(By.xpath(".//*[@id=':6j']/div/div/div")).click();
+}
+
+@After
+public void teardown() {
+// closes all the browser windows opened by web driver
+//drv.quit();
+}
+}
+
+
+

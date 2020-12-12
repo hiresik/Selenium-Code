@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG TestSuite]">
+  <listeners>
+    <listener class-name="ErrorCollectors.TestListenerAdapter"/>
+  </listeners>
+  <test thread-count="5" name="Test Validate(failed)">
+    <classes>
+      <class name="TestValidateTitles">
+        <methods>
+          <include name="ValidteTitle"/>
+        </methods>
+      </class> <!-- TestValidateTitles -->
+    </classes>
+  </test> <!-- Test Validate(failed) -->
+</suite> <!-- Failed suite [TestNG TestSuite] -->

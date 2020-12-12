@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Way2Automation TestSuite">
+    
+   
+    
+    
+  <test name="Login Test">
+      
+       <groups>
+    <run>
+      <include name="low"/>
+    </run>
+  </groups>
+  
+    <classes>
+           <class name="TestCase1"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="Priority Test">
+    <classes>
+           <class name="TestCase2"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+    <test name="Dependency Test">
+    <classes>
+           <class name="TestCase3"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="Assertions Test">
+    <classes>
+           <class name="TestCase4"/>
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->

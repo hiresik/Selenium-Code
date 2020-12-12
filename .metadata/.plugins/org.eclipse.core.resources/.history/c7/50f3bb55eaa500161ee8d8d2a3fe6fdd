@@ -1,0 +1,40 @@
+package com.variables;
+
+public class Variables_02 {
+
+	int a = 12;
+	int b = 14;
+static int x = 23;
+static int y = 25;
+
+	public static void main(String[] args) {
+		
+	Variables_02 m = new m3();
+	m.m3();
+		Variables_02.m4();
+
+		
+	}
+
+ void m3(){
+	Variables_02 v = new Variables_02();
+		System.out.println("from m1 instance "+v.a);
+		System.out.println("from m1 instance "+v.b);
+	
+		System.out.println("from m1 static "+x);
+		System.out.println("from m1 static "+y);
+		
+	}
+	
+	
+	static void m4(){
+
+		Variables_02 v1 = new Variables_02();
+		System.out.println("from m4 instance "+v1.a);
+		System.out.println("from m4 instance "+v1.b);
+	
+		System.out.println("from m4 static "+x);
+		System.out.println("from m4 static "+y);
+
+	}
+}

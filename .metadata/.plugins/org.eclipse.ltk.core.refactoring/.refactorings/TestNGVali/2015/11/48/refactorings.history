@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TestNGTest1.java&apos; to &apos;TestNGFiles&apos;&#x0D;&#x0A;- Original project: &apos;TestNGVali&apos;&#x0D;&#x0A;- Destination element: &apos;TestNGFiles&apos;&#x0D;&#x0A;- Original element: &apos;TestNGTest1.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" element1="src/default/TestNGTest1.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1448737021879" target="src/default/TestNGFiles" units="0" version="1.0"/>
+</session>

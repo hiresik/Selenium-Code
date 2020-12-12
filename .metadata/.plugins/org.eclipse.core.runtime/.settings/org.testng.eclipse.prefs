@@ -1,0 +1,3 @@
+SoftAssert.outdir=/test-output
+SoftAssert.useProjectJar=true
+eclipse.preferences.version=1

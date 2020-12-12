@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Javascript Learning</title>
+      <script language="javascript" type="text/javascript">
+         <!--
+            document.write("Hello World!")
+         //-->
+      </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Way2Automation TestSuite]">
+  <test name="Dependency Test(failed)">
+    <classes>
+      <class name="TestCase3">
+        <methods>
+          <include name="validateData"/>
+        </methods>
+      </class> <!-- TestCase3 -->
+    </classes>
+  </test> <!-- Dependency Test(failed) -->
+  <test name="Assertions Test(failed)">
+    <classes>
+      <class name="TestCase4">
+        <methods>
+          <include name="validateTitlesTest"/>
+        </methods>
+      </class> <!-- TestCase4 -->
+    </classes>
+  </test> <!-- Assertions Test(failed) -->
+</suite> <!-- Failed suite [Way2Automation TestSuite] -->
